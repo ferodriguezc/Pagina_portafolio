@@ -175,6 +175,9 @@ nav {
     .botones {
         margin-bottom: 5%;
     }
+
+    }
+
     @keyframes desplazamientoDiagonal_Arriba {
         0% {
             transform: translate(0, 0);
