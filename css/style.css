@@ -20,8 +20,9 @@ main {
         left: 0;
         width: 100%; /* Opcional: ajusta según sea necesario */
         height: 100%; /* Opcional: ajusta según sea necesario */
-        background-color: #232ecb; /* Cambiado a un color sólido */
+        background-color: black; /* Cambiado a un color sólido */
         animation: desplazamientoDiagonal_Arriba 5s forwards ;
+        border-top-left-radius: 20px;
 }
 
 
@@ -32,25 +33,25 @@ main {
     left: 0%;
     width: 100%; /* Opcional: ajusta según sea necesario */
     height: 100%; /* Opcional: ajusta según sea necesario */
-    background-color: #232ecb; /* Cambiado a un color sólido */
+    background-color: black; /* Cambiado a un color sólido */
     z-index: 9999;
     overflow: hidden;
     animation: desplazamientoDiagonal_Abajo 5s forwards ;
-   
+    border-bottom-right-radius: 20px;
+  
 }
 
-.Animacion_Inicio_3{
+.Animacion_Inicio_3 {
     display: block;
-    position: fixed; /* Cambiado a fixed para que cubra toda la pantalla */
-    top:  0%;
-    left: 0%;
-    width: 100%; /* Opcional: ajusta según sea necesario */
-    height: 100%; /* Opcional: ajusta según sea necesario */
-    z-index: 9999;
-    overflow: hidden;
-    text-align: center;
+    position: fixed;
+    top: 50%; /* Alinea el elemento hacia el centro verticalmente */
+    left: 50%; /* Alinea el elemento hacia el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige el desplazamiento en el centro */
     align-items: center;
-   
+    text-align: center;
+    color: aliceblue;
+    z-index: 9999;
+    font-size: 5vw;
 }
 
 
@@ -174,31 +175,36 @@ nav {
     .botones {
         margin-bottom: 5%;
     }
-}
-@keyframes desplazamientoDiagonal_Abajo {
-    0% {
-        transform: translate(0, 0);
+    @keyframes desplazamientoDiagonal_Arriba {
+        0% {
+            transform: translate(0, 0);
+          
+        }
+    
+        50% {
+            transform: translate(0%, 0%);
+           
+        }
+    
+        100% {
+            transform: translate(100%, 100%);
+             opacity: 0.5;
+        }
     }
-  
-    50% {
-        transform: translate(0%, 0%);
+    
+    @keyframes desplazamientoDiagonal_Abajo {
+        0% {
+            transform: translate(0%, 0%);
+            
+        }
+    
+        50% {
+            transform: translate(0%, 0%);
+           
+        }
+    
+        100% {
+            transform: translate(-100%, -100%);
+             opacity: 0.5;
+        }
     }
-   
-    100% {
-        transform: translate(100%, 100%);
-    }
-}
-
-@keyframes desplazamientoDiagonal_Arriba {
-    0% {
-        transform: translate(0%, 0%);
-    }
-   
-    50% {
-        transform: translate(0%, 0%);
-    }
-   
-    100% {
-        transform: translate(-100%, -100%);
-    }
-}
