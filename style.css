@@ -32,12 +32,27 @@ main {
     left: 0%;
     width: 100%; /* Opcional: ajusta según sea necesario */
     height: 100%; /* Opcional: ajusta según sea necesario */
-    background-color: #000981; /* Cambiado a un color sólido */
+    background-color: #232ecb; /* Cambiado a un color sólido */
     z-index: 9999;
     overflow: hidden;
     animation: desplazamientoDiagonal_Abajo 5s forwards ;
    
 }
+
+.Animacion_Inicio_3{
+    display: block;
+    position: fixed; /* Cambiado a fixed para que cubra toda la pantalla */
+    top:  0%;
+    left: 0%;
+    width: 100%; /* Opcional: ajusta según sea necesario */
+    height: 100%; /* Opcional: ajusta según sea necesario */
+    z-index: 9999;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+   
+}
+
 
 
 .titulo {
@@ -160,27 +175,29 @@ nav {
         margin-bottom: 5%;
     }
 }
-
 @keyframes desplazamientoDiagonal_Abajo {
     0% {
         transform: translate(0, 0);
     }
+  
     50% {
-        transform: translate(50%, 50%);
+        transform: translate(0%, 0%);
     }
+   
     100% {
         transform: translate(100%, 100%);
     }
 }
 
-
 @keyframes desplazamientoDiagonal_Arriba {
     0% {
-        transform: translate(0, 0);
+        transform: translate(0%, 0%);
     }
+   
     50% {
-        transform: translate(-50%, -50%);
+        transform: translate(0%, 0%);
     }
+   
     100% {
         transform: translate(-100%, -100%);
     }
