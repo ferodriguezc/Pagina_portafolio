@@ -13,35 +13,41 @@ main {
     margin-bottom: 10%;
 }
 
-.Animacion_Inicio_1{
-        display: block;
-        position: fixed; /* Cambiado a fixed para que cubra toda la pantalla */
-        top: 0;
-        left: 0;
-        width: 100%; /* Opcional: ajusta según sea necesario */
-        height: 100%; /* Opcional: ajusta según sea necesario */
-        background-color: black; /* Cambiado a un color sólido */
-        animation: desplazamientoDiagonal_Arriba 5s forwards ;
-        border-top-left-radius: 20px;
-}
 
 
-.Animacion_Inicio_2{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Animacion_Inicio_1 {
     display: block;
-    position: fixed; /* Cambiado a fixed para que cubra toda la pantalla */
-    top:  0%;
-    left: 0%;
-    width: 100%; /* Opcional: ajusta según sea necesario */
-    height: 100%; /* Opcional: ajusta según sea necesario */
-    background-color: black; /* Cambiado a un color sólido */
-    z-index: 9999;
-    overflow: hidden;
-    animation: desplazamientoDiagonal_Abajo 5s forwards ;
-    border-bottom-right-radius: 20px;
-  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    background-size: cover;
+    animation: desvanecer 4s forwards;
 }
 
-.Animacion_Inicio_3 {
+
+.Animacion_Inicio_2 {
     display: block;
     position: fixed;
     top: 50%; /* Alinea el elemento hacia el centro verticalmente */
@@ -50,20 +56,12 @@ main {
     align-items: center;
     text-align: center;
     z-index: 9999;
-    font-size: 5vw;
-   
+    font-size: 5vw; 
 }
 
 
-@keyframes girar {
-    0% {
-        transform: rotate(0deg);
-    }
 
-    100% {
-        transform: rotate(360deg);
-    }
-}
+
 
 .circuloConPunto1 {
     top: 10px;
@@ -91,6 +89,19 @@ main {
    
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .titulo {
     text-align: center;
 }
@@ -98,6 +109,11 @@ main {
 .subtitulo {
     text-align: center;
 }
+
+
+
+
+
 
 nav {
     text-align: center;
@@ -112,6 +128,11 @@ nav {
 .botones:hover {
     background-color: #ffffffc7;
 }
+
+
+
+
+
 
 #contenedor {
     overflow-y: auto;
@@ -170,10 +191,21 @@ nav {
 .contenedor_logos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
     text-align: center;
-    align-items: center;
     margin: 1%;
 }
+
+/* Añade estilos adicionales según sea necesario */
+.contenedor_logos img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px; /* Ajusta el espacio entre los elementos según sea necesario */
+}
+
+
+
 
 .ceparador {
     animation: aparecerDesdeDerecha 1s ease-in-out;
@@ -217,6 +249,8 @@ nav {
 
     }
 
+
+
     @keyframes desplazamientoDiagonal_Arriba {
         0% {
             transform: translate(0, 0);
@@ -233,6 +267,10 @@ nav {
              opacity: 0.5;
         }
     }
+
+
+
+
     
     @keyframes desplazamientoDiagonal_Abajo {
         0% {
@@ -268,4 +306,44 @@ nav {
             clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 0);
         }
     }
+      
+
     
+    @keyframes desvanecer {
+        0% {
+            opacity: 1;
+           
+        }
+
+        50%{
+            opacity: 1;
+           
+        }
+    
+        100% {
+            opacity: 0;
+           
+        }
+    }
+    
+    @keyframes girar {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+   
+
+
+    @keyframes aparecerDesdeDerecha {
+          from{
+
+           transform:translateY(200%);
+
+          }
+   
+
+    }

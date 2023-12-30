@@ -14,4 +14,5 @@ setTimeout(function() {
     document.querySelector('.Animacion_Inicio_1').classList.add('oculto');
     document.querySelector('.Animacion_Inicio_2').classList.add('oculto');
     document.querySelector('.Animacion_Inicio_3').classList.add('oculto');
-}, 4500);
+}, 3000);
+
