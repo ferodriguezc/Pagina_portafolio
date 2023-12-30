@@ -104,6 +104,7 @@ main {
 
 .titulo {
     text-align: center;
+    margin-top: -1%;
 }
 
 .subtitulo {
@@ -142,6 +143,8 @@ nav {
     overflow: hidden;
     position: relative;
     border: 10px solid transparent;
+  
+
 }
 
 #contenedor::before,
@@ -152,6 +155,7 @@ nav {
     border-image: linear-gradient(45deg, #232ecb, #237dbd, #00ff08);
     border-image-slice: 1;
     animation: cambioGradiente 5s infinite alternate;
+    
 }
 
 #contenedor::before {
