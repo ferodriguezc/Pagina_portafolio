@@ -1,12 +1,19 @@
+ 
+@font-face {
+    font-family: "Nueva_fuente";
+    src: url(Font/Monobrain.woff2) format('woff2');
+}
+
 html, body {
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
     text-transform: uppercase;
     margin: 0;
     padding: 0;
     overscroll-behavior-y: none;
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Nueva_fuente" ;
+   
 }
 
 
@@ -14,9 +21,8 @@ html, body {
 main {
     margin: 10%;
     margin-top: 1%;
-    margin-bottom: 10%;
+  
 }
-
 
 
 
@@ -360,3 +366,7 @@ nav {
    
 
     }
+
+
+
+   
