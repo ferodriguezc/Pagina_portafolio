@@ -46,7 +46,9 @@ main {
 
 
 
-
+.cuadro_c{
+    border: 1px black solid;
+}
 
 
 .Animacion_Inicio_1 {
