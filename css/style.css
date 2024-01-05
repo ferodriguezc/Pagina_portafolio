@@ -38,7 +38,10 @@ main {
 
 
 .contenedor_contacto{
+    display: flex;
+    flex-wrap: nowrap;
     background-color: #00ff08;
+    margin: 5%;
 }
 
 
