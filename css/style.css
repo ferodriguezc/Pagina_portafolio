@@ -48,7 +48,6 @@ main {
 
 .cuadro_c{
     border: 1px black solid;
-    width: 50%;
     height: 50%;
     margin: 5%;
 }
@@ -169,7 +168,7 @@ nav {
 
 
 .ceparador {
-    animation: aparecerDesdeDerecha 1s ease-in-out;
+    animation: aparecerDesdeAbajo 0.5s ease-in-out forwards;
 }
 
 
@@ -216,7 +215,7 @@ nav {
 
 
 
-    @keyframes aparecerDesdeDerecha {
+    @keyframes aparecerDesdeAbajo {
           from{
 
            transform:translateY(200%);
@@ -228,4 +227,26 @@ nav {
 
 
 
-   
+    @keyframes cambioGradiente {
+        0%, 100% {
+            border-image: linear-gradient(45deg, #232ecb, #237dbd, #00ff08);
+            border-image-slice: 1;
+        }
+    
+        25%, 75% {
+            border-image: linear-gradient(45deg, #237dbd, #00ff08, #232ecb);
+            border-image-slice: 1;
+        }
+    
+        50% {
+            border-image: linear-gradient(45deg, #00ff08, #232ecb, #237dbd);
+            border-image-slice: 1;
+        }
+    }
+
+
+    
+    .elemento-con-animacion {
+        animation: cambioGradiente 2s ease infinite;
+    }
+    
