@@ -54,71 +54,6 @@ main {
 }
 
 
-.Animacion_Inicio_1 {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
-    background-size: cover;
-    animation: desvanecer 4s forwards;
-}
-
-
-.Animacion_Inicio_2 {
-    display: block;
-    position: fixed;
-    top: 50%; /* Alinea el elemento hacia el centro verticalmente */
-    left: 50%; /* Alinea el elemento hacia el centro horizontalmente */
-    transform: translate(-50%, -50%); /* Corrige el desplazamiento en el centro */
-    align-items: center;
-    text-align: center;
-    z-index: 9999;
-    font-size: 5vw; 
-}
-
-
-
-
-
-.circuloConPunto1 {
-    top: 10px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-    /* Hacemos el borde transparente para que solo se vea el borde superior en el siguiente paso */
-    border: 5px solid #237dbd;
-    margin-top: -100px; /* Ajusta según sea necesario */
-    animation: girar 1s linear infinite, desvanecerIzquierdaDerecha 4s forwards;
-  
-  }
-
-
-.circuloConPunto2 {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: relative;
-    border: 5px solid transparent; /* Hacemos el borde transparente para que solo se vea el borde superior en el siguiente paso */
-    border-top: 5px solid #00ff08;
-    margin-top: -100px; /* Ajusta según sea necesario */
-    animation: girar 1s linear infinite, desvanecerIzquierdaDerecha 4s forwards;
-   
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -237,6 +172,7 @@ nav {
     animation: aparecerDesdeDerecha 1s ease-in-out;
 }
 
+
 .logos {
     height: 80px;
     width: 80px;
@@ -278,93 +214,6 @@ nav {
 
     }
 
-
-
-    @keyframes desplazamientoDiagonal_Arriba {
-        0% {
-            transform: translate(0, 0);
-          
-        }
-    
-        50% {
-            transform: translate(0%, 0%);
-           
-        }
-    
-        100% {
-            transform: translate(100%, 100%);
-             opacity: 0.5;
-        }
-    }
-
-
-
-
-    
-    @keyframes desplazamientoDiagonal_Abajo {
-        0% {
-            transform: translate(0%, 0%);
-            
-        }
-    
-        50% {
-            transform: translate(0%, 0%);
-           
-        }
-    
-        100% {
-            transform: translate(-100%, -100%);
-             opacity: 0.5;
-        }
-    }
-
-
-    @keyframes desvanecerIzquierdaDerecha {
-        0% {
-            opacity: 1;
-            clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
-        }
-
-        50%{
-            opacity: 1;
-            clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0)
-        }
-    
-        100% {
-            opacity: 0;
-            clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 0);
-        }
-    }
-      
-
-    
-    @keyframes desvanecer {
-        0% {
-            opacity: 1;
-           
-        }
-
-        50%{
-            opacity: 1;
-           
-        }
-    
-        100% {
-            opacity: 0;
-           
-        }
-    }
-    
-    @keyframes girar {
-        0% {
-            transform: rotate(0deg);
-        }
-    
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-   
 
 
     @keyframes aparecerDesdeDerecha {
