@@ -7,3 +7,6 @@ function cambiarDiv(seccion) {
     });
 }
 
+function expandir(elemento) {
+    elemento.classList.toggle('expandido');
+}
