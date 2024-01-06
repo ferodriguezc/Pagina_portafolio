@@ -98,6 +98,7 @@ main {
     border-image: linear-gradient(45deg, #232ecb, #237dbd, #00ff08);
     border-image-slice: 1;
     animation: cambioGradiente 5s infinite alternate;
+    
 }
 
 .subtitulo {
