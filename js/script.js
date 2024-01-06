@@ -8,5 +8,13 @@ function cambiarDiv(seccion) {
 }
 
 function expandir(elemento) {
+    var todosLosCuadros = document.querySelectorAll('.cuadro_a');
+
+    todosLosCuadros.forEach(function(cuadro) {
+        if (cuadro !== elemento && cuadro.classList.contains('expandido')) {
+            cuadro.classList.remove('expandido');
+        }
+    });
+
     elemento.classList.toggle('expandido');
 }

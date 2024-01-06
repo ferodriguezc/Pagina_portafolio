@@ -5,6 +5,7 @@
     src: url(Font/Monobrain.woff2) format('woff2');
 }
 
+
 html, body {
     display: flex;
     flex-direction: column;
@@ -14,9 +15,7 @@ html, body {
     overscroll-behavior-y: none;
     height: 100%;
     font-family: "Nueva_fuente" ;
-   
 }
-
 
 
 main {
@@ -71,8 +70,15 @@ main {
     width: 100%;
     height: 600px;
     background-color: rgba(96, 96, 96, 0.15);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 }
+
+.cuadro_a:hover {
+    background-color: rgba(96, 96, 96, 0.15);
+}
+
+
+
 
 .img_portafolio {
     height: 50%; /* Cambié el valor a 100% para ajustar la altura al 100% del contenedor */
@@ -119,7 +125,7 @@ nav {
 
 
 #contenedor {
-    text-align: justify;
+    text-align: left;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     box-sizing: border-box;
@@ -129,7 +135,7 @@ nav {
     position: relative;
     border: 10px solid transparent;
     min-width: 200px;
-
+    
 }
 
 #contenedor::before,
