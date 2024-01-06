@@ -85,6 +85,7 @@ main {
     width: 70%;  /* Cambié el valor a 100% para ajustar el ancho al 100% del contenedor */
     padding: 1%;
     border: 1px solid;
+    border-radius: 10px;
 }
 
 
