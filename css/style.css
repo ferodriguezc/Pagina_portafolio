@@ -28,37 +28,44 @@ main {
 
 
 
-
-
-
-
-
-
 .contenedor_contacto{
     display: flex;
     flex-wrap: wrap;
-    margin: 2%;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center;
+    margin: 1%;
+
+}
+
+.contenedor_contacto img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px; /* Ajusta el espacio entre los elementos según sea necesario */
 }
 
 .contenedor_proyecto{
     display: flex;
     flex-wrap: wrap;
+    
+    margin: 25px;
 }
 
+
 .cuadro_c{
-    border: 1px black solid;
-    height: 100%;
-    width: 100%;
-    margin: 5%;
-   
+  
+       
+        margin: 25px;
+
 }
+
 
 
 .cuadro_a{
     border: 1px black solid;
-    height: 100%;
-    width: 100%;
-    margin: 5%;
+    min-height: 200px;
+    min-width: 200px;
+   
 }
 
 
@@ -72,8 +79,6 @@ main {
 .subtitulo {
     text-align: center;
 }
-
-
 
 
 
@@ -97,9 +102,8 @@ nav {
 
 
 
-
-
 #contenedor {
+    text-align: justify;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     box-sizing: border-box;
@@ -108,7 +112,7 @@ nav {
     overflow: hidden;
     position: relative;
     border: 10px solid transparent;
-  
+    min-width: 200px;
 
 }
 
@@ -208,7 +212,6 @@ nav {
 
 
 
-
     @keyframes aparecerDesdeAbajo {
           from{
 
@@ -244,3 +247,4 @@ nav {
         animation: cambioGradiente 2s ease infinite;
     }
     
+
