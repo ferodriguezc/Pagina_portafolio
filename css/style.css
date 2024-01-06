@@ -58,8 +58,8 @@ main {
     border: 1px black solid;
     text-align: center;
     margin: 2%;
-    min-width: 300px;
-    min-height: 300px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -81,8 +81,8 @@ main {
 
 
 .img_portafolio {
-    height: 70%; /* Cambié el valor a 100% para ajustar la altura al 100% del contenedor */
-    width: 70%;  /* Cambié el valor a 100% para ajustar el ancho al 100% del contenedor */
+    height: 50%; /* Cambié el valor a 100% para ajustar la altura al 100% del contenedor */
+    width: 50%;  /* Cambié el valor a 100% para ajustar el ancho al 100% del contenedor */
     padding: 1%;
     border: 1px solid;
     border-radius: 10px;
