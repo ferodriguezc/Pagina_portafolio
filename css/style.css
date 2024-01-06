@@ -98,7 +98,7 @@ main {
     border-image: linear-gradient(45deg, #232ecb, #237dbd, #00ff08);
     border-image-slice: 1;
     animation: cambioGradiente 5s infinite alternate;
-    
+
 }
 
 .subtitulo {
@@ -274,3 +274,17 @@ nav {
     }
     
 
+@media only screen and (max-width: 600px) {
+    /* Reglas de estilo específicas para pantallas pequeñas (hasta 600px) */
+    main {
+        margin: 2%;
+    }
+
+    .cuadro_a {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+    }
+
+    .titulo {
+        font-size: 18px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+}
